@@ -1,0 +1,171 @@
+body{
+  overflow-x: hidden;
+}
+.nav-link:hover{
+  color:orange !important;
+}
+.custom-toggler {
+  background-color: white;
+}
+/* Best Food dishes */
+#best-food {
+  padding: 60px 0;
+}
+/* Heading Styling */
+#best-food h2 {
+  font-size: 2.5rem;
+  color: #ffa500; /* Orange */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* Circular Image Styling with Rotation */
+.food-img {
+   object-fit: cover;
+  border: 5px solid white; /* Optional border for better appearance */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Slight shadow for effect */
+  animation: rotate360 5s linear infinite; /* Rotate effect */
+}
+/* 360 Degree Rotation Animation */
+@keyframes rotate360 {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+.carousel-item {
+  transition: transform 1s ease-in-out; /* Smooth transition between slides */
+}
+/* Custom Cursor */
+#custom-cursor {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 2px solid #ffa500; /* Orange border */
+  border-radius: 50%;
+  pointer-events: none; /* Prevent cursor from affecting clicks */
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s, height 0.2s, background-color 0.2s, border-color 0.2s;
+}
+/* When hovering over menu items */
+.nav-link:hover ~ #custom-cursor,
+.navbar-brand:hover ~ #custom-cursor {
+  background-color: rgba(255, 165, 0, 0.3); /* Transparent orange */
+  width: 40px;
+  height: 40px;
+}
+/* Popular Dishes Section */
+#popular-dishes {
+  padding: 60px 0;
+}
+/* Section Heading */
+#popular-dishes h2 {
+  font-size: 2.5rem;
+  color: #ffa500; /* Orange */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* Card Styling */
+.dish-card {
+  background-color: #f8f9fa; /* Light card background */
+  transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Card Hover Effect */
+.dish-card:hover {
+  background-color: #000; /* Change background to black on hover */
+  transform: translateY(-10px); /* Slight lift on hover */
+  color: #fff; /* White text on hover */
+}
+/* Card Title */
+.dish-card .card-title {
+  font-size: 1.25rem;
+  color: #333; /* Default text color */
+}
+/* Card Price */
+.dish-card .card-price {
+  font-size: 1rem;
+  color: #ffa500; /* Orange price */
+  font-weight: bold;
+}
+/* Change text to white on hover */
+.dish-card:hover .card-title,
+.dish-card:hover .card-price {
+  color: #ffa500; /* Keep orange price and white title on hover */
+}
+/* Image Styling */
+.dish-card img {
+  object-fit: content;
+  height: 300px;
+  width: 100%;
+  border-bottom: 3px solid #ffa500;
+}
+.sub{
+  color:orange;
+  font-size: 18px;
+  font-weight: bold;
+}
+/* Fresh Menu Section */
+
+/* Section Heading */
+#fresh-menu h2 {
+  font-size: 2.5rem;
+  color: #ffa500; /* Orange */
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/* Titles Row */
+#fresh-menu h4 {
+  color: #ffa500; /* Orange for subheadings */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+/* Menu Item Row Styling */
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-item img.menu-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ffa500; /* Orange border for images */
+}
+.menu-title {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-left: 15px;
+}
+.menu-price {
+  font-size: 1.2rem;
+  color: #ffa500; /* Orange price */
+  font-weight: bold;
+}
+/* HR Styling */
+hr {
+  border: 1px solid #ffa500; /* Orange horizontal line */
+  margin: 15px 0;
+}
+/* Category Row Styling */
+.category-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+.text-orange {
+  color: #ffa500; /* Orange */
+  font-weight: bold;
+}
+.chef-top{
+  margin-top: -50px;
+}
